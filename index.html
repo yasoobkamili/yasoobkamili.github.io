@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devhike.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="landingPage">
+        <div class="header">
+            <div class="menu" id="menu" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                    fill="#e8eaed">
+                    <path
+                        d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+                </svg>
+            </div>
+            <div id="logo">
+                <h1><a href="index.html">
+                        devhike.
+                    </a>
+                </h1>
+            </div>
+            <div id="pattern"></div>
+        </div>
+        <div class="aside" id="aside">
+            <ul>
+                <li class="active menu" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e8eaed">
+                        <path
+                            d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+                    </svg>
+                </li>
+
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>
+                </li>
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e3e3e3">
+                        <path
+                            d="m280-40 123-622q6-29 27-43.5t44-14.5q23 0 42.5 10t31.5 30l40 64q18 29 46.5 52.5T700-529v-71h60v560h-60v-406q-48-11-89-35t-71-59l-24 120 84 80v300h-80v-240l-84-80-72 320h-84Zm17-395-85-16q-16-3-25-16.5t-6-30.5l30-157q6-32 34-50.5t60-12.5l46 9-54 274Zm243-305q-33 0-56.5-23.5T460-820q0-33 23.5-56.5T540-900q33 0 56.5 23.5T620-820q0 33-23.5 56.5T540-740Z" />
+                    </svg>
+                </li>
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                    </svg>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="main">
+            <div class="overlay ">
+                <h1>A journey through <br><span>terminal prompts</span> and <span class="fade">mountain
+                        trails.</span></h1>
+                <p>I'm<strong> Yasoob</strong><br>
+                    On this blog, I share what I build and where I wander.</p>
+                <a href="#content"> <button id="explore-btn">Explore</button></a>
+            </div>
+
+            <div class="content " id="content">
+                <div class="trek-details">
+                    <h2>Dumail, Naranaag</h2>
+                    <p> 11 July 2021 <br> The trek begins from Naranag village, situated at around 2277 meters above sea
+                        level.
+                        A
+                        few
+                        hundred meters into the trail, trekkers pass by ancient Hindu temples, offering a quick
+                        historical stop.
+                        After approximately 4 km and 2 hours of trekking, Dumail is reached at ~2400 m ASL. The trail up
+                        to
+                        Dumail
+                        features minimal elevation gain and is rated as easy. The name “Dumail” is derived from “Du”
+                        (two) and
+                        “Mail” (join), marking the confluence of two rivers—Marchoi Nala and another stream originating
+                        from
+                        Gangbal
+                        Lake. These form the Wangath River. A distinctive wooden bridge at Dumail marks the crossing
+                        point to
+                        the
+                        next section of the trail. From Dumail, the trail transitions into a moderate gradient ascent
+                        through
+                        alpine
+                        meadows for the next 5 km. This section involves a steady climb with scenic views of the
+                        surrounding
+                        forested ridgelines and open pastures. After approximately 4 additional hours of trekking, the
+                        Harmukh
+                        peaks
+                        come into view, signaling proximity to Marchoi Valley, which sits at an altitude of about 2850
+                        m. <br>
+
+                        Trek Grade: Easy to Moderate <br> Total Distance: 19 kms</p>
+
+                </div>
+                <div class="trek-images">
+                    <img src="images/Dumail/dumail1.jpg" alt="Trail through pine forest to Dumail" />
+                    <img src="images/Dumail/dumail_yasoob.jpg" alt="Confluence of rivers at Dumail" />
+                    <img src="images/Dumail/marchoi_valley.jpg" alt="Marchoi Valley" />
+                    <img src="images/Dumail/dense_forest.jpg" alt="Marchoi Valley" />
+                </div>
+                <div class="trek-details">
+                    <h2>Rainuer, The Endless Meadow</h2>
+                    <p> 11 July 2021 <br> The trek begins from Hirpora village in Shopian at ~2385 meters above sea
+                        level. Trekking in this area
+                        usually requires prior permission due to its proximity to sensitive zones and the Hirpora
+                        Wildlife
+                        Sanctuary.
+
+                        At around 600 meters into the trail, trekkers reach Zrado, followed by a gradual ascent to
+                        Baliwal. The
+                        trail transitions from forested sections of Shahkoot to more open terrain, and at approximately
+                        6.5 km
+                        from the
+                        trailhead, the Tsurgul Pass is reached. This pass offers the view to Badgam's Shein Meuin
+                        Peak and first major alpine vista,
+                        opening up into expansive meadows and panoramic views of the Pir Panjal range, including
+                        prominent peaks
+                        like Brahmasakli(of Kulgam), Dhakyar(of Shopian), Sunder Top (of Banihal) and more.
+
+                        After crossing the pass, a further 3.5 km leads to the final destination—Rainuer Meadows—at
+                        ~3185 m ASL.
+                        The meadows are vast, lush, and relatively less explored, believed to be the second-largest
+                        alpine
+                        meadow in Kashmir. The terrain is grassy, interspersed with boulders and occasional seasonal
+                        streams.
+
+                        Although the standard route is a circuit trek (Hirpora → Rainuer → Dubjan
+                        Bridge), the group had to return via the same route due to an injury to one member.
+
+                        During the descent, the group was warmly hosted by local nomads at a hut near the trail. Around
+                        15
+                        members of the team were served noon chai, roti, and fresh homemade butter. Despite offering to
+                        pay, the
+                        nomads politely refused any compensation, showcasing typical high-altitude hospitality.
+                        <br>
+
+                        Trek Grade: Easy to Moderate <br> Total Distance: 19 kms
+                    </p>
+
+                </div>
+                <div class="trek-images">
+                    <img src="images/Rainuer/meadow1.jpg" alt="Trugut pass" />
+                    <img src="images/Rainuer/pink_tea.jpg" alt="" />
+                    <img src="images/Rainuer/dhoka.jpg" alt="Nomadic kacha House" />
+                    <img src="images/Rainuer/Bakarawal_dog.jpg" alt="Marchoi Valley" />
+                    <img src="images/Rainuer/meadow2.jpg" alt="Marchoi Valley" />
+
+                </div>
+                <div class="trek-details">
+                    <h2>Mahadev Peak Basecamp:Lidwas</h2>
+                    <h3>Route Overview</h3>
+                    <p>Originally intended as a one-day summit attempt to Mahadev Peak (3966 m ASL), the plan had to be
+                        modified
+                        due to road closures in Srinagar caused by a cycle race, resulting in a two-hour delay. The team
+                        initiated the trek from Scholar’s School, Dhara (2030 m ASL) without any breaks.
+
+                        After the initial stretch, the trail passed Padshah Pal, followed by an approach toward Bobjan,
+                        a
+                        section known for high bear activity and considered one of the more dangerous segments of the
+                        route.
+                        Several members reported past bear encounters here.
+
+                        Following multiple stream crossings, the trail entered Wovur Gul, a steep and energy-intensive
+                        climb.
+                        After gaining elevation in Wovur Gul, Lidwas became visible at a distance. It took about an hour
+                        from
+                        this point to reach Lidwas.</p>
+                    <h3>Lidwas & Above</h3>
+                    <p>Lidwas serves as a seasonal settlement for nomadic communities during the six months of summer.
+                        The team
+                        reached Lidwas around 1:30 PM. Out of 20 members, 5 decided to push further above Lidwas for
+                        better
+                        vantage points of Mahadev Peak.The group ascended an additional hour, reaching an altitude of
+                        approximately 3520 m ASL, which provided
+                        unobstructed views of Mahadev Peak and surrounding ridgelines. On the descent back to Lidwas, a
+                        wildlife
+                        sighting occurred—an animal with a furry tail was initially suspected to be a fox, but was later
+                        confirmed via binoculars to be a Himalayan Marmot, a first-time sighting for the group.</p>
+                    <h3>Return Journey</h3>
+                    <p>While descending, the team retraced the same route. At Bobjan, a group member narrowly avoided
+                        stepping
+                        on a green snake, marking another notable wildlife encounter. After exiting Bobjan, the trail
+                        gradually
+                        eased, allowing the group to recover from the more challenging sections.</p>
+
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Moderate to Difficult <br>
+                        <b>Total Distance: </b> 19.6 kms
+                    </span>
+
+                    </p>
+
+                </div>
+                <div class="trek-images">
+                    <img src="images/Lidwas/1.jpg" alt="Trugut pass" />
+                    <img src="images/Lidwas/mahadevPeak.jpg" alt="Nomadic kacha House" />
+                    <img src="images/Lidwas/IMG20230625134648.jpg" alt="Nomadic kacha House" />
+                    <img src="images/Lidwas/trail.jpg" alt="Nomadic kacha House" />
+                </div>
+                <div class="trek-details">
+                    <h2>Shilsar, My First Alpine Lake</h2>
+                    <p>
+                        <span class="date">30 July 2023</span> <br>
+                        The Shilsar Lakes trek began from Margan Top (~3700 m ASL), a high-altitude pass connecting
+                        Islamabad
+                        with Kishtwar, after a 120 km drive from Srinagar. The trail starts to the right of the pass
+                        with an initial steep ridge followed by a gradual ascent through alpine terrain. Out of the four
+                        Shilsar
+                        lakes, only two were visited on this route as the remaining are more accessible from a different
+                        approach. Shilsar 1 (~3900 m ASL) was reached around 12:30 PM with an estimated surface area of
+                        6310 sq.
+                        meters (season-dependent), followed by Shilsar 2 (~3920 m ASL) after a 20-minute trek where the
+                        team had
+                        lunch during rain and hail. The lakes marked the trekker’s first alpine lake experience, with
+                        distant
+                        views of Nun and Kun peaks visible from Margan Top. The descent concluded at 4:00 PM, with tea
+                        at a
+                        local dhaba owned by Majid, and departure from Margan Top at 5:30 PM.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy to Moderate <br>
+                        <b>Total Distance: </b> 11 kms
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <img src="images/Shilsar/margran_road.jpg" alt="" />
+                    <img src="images/Shilsar/margan_valley.jpg" alt="" />
+                    <img src="images/Shilsar/shilsar1.jpg" alt="" />
+                    <img src="images/Shilsar/shilsar_valley.jpg" alt="" />
+                    <img src="images/Shilsar/margan_top.jpg" alt="" />
+                    <img src="images/Shilsar/shilsar2.jpg" alt="" />
+
+                </div>
+
+            </div>
+
+            <footer>footer</footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
