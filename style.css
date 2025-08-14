@@ -261,7 +261,7 @@ body {
 }
 .trek-images img {
   width: 100%;
-  aspect-ratio: 3/2;
+  /* aspect-ratio: 3/2; */
   object-fit: cover;
   border-radius: 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.23);
@@ -274,6 +274,10 @@ body {
   transform: scale(1.05) rotate(-1deg);
   z-index: 2;
   box-shadow: 0 8px 32px rgba(38, 182, 151, 0.18);
+}
+figcaption {
+  font-size: small;
+  text-align: center;
 }
 
 @media (max-width: 850px) {
