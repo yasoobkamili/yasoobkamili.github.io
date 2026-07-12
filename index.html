@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devhike.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+    <div class="landingPage">
+        <div class="header">
+            <div class="menu" id="menu" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                    fill="#e8eaed">
+                    <path
+                        d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+                </svg>
+            </div>
+            <div id="logo">
+                <h1><a href="index.html">
+                        devhike.
+                    </a>
+                </h1>
+            </div>
+            <div id="pattern"></div>
+        </div>
+        <div class="aside" id="aside">
+            <ul>
+
+                <li class="active menu" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e8eaed">
+                        <path
+                            d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+                    </svg>
+                </li>
+                <a href="#">
+                    <li class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                        </svg>
+                    </li>
+                </a>
+                <a href="#content">
+                    <li class="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                            fill="#e3e3e3">
+                            <path
+                                d="m280-40 123-622q6-29 27-43.5t44-14.5q23 0 42.5 10t31.5 30l40 64q18 29 46.5 52.5T700-529v-71h60v560h-60v-406q-48-11-89-35t-71-59l-24 120 84 80v300h-80v-240l-84-80-72 320h-84Zm17-395-85-16q-16-3-25-16.5t-6-30.5l30-157q6-32 34-50.5t60-12.5l46 9-54 274Zm243-305q-33 0-56.5-23.5T460-820q0-33 23.5-56.5T540-900q33 0 56.5 23.5T620-820q0 33-23.5 56.5T540-740Z" />
+                        </svg>
+                    </li>
+                </a>
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                    </svg>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="main">
+            <div class="overlay ">
+                <h1>A journey through <br><span>terminal prompts</span> and <span class="fade">mountain
+                        trails.</span></h1>
+                <p>I'm<strong> Yasoob</strong><br>
+                    On this blog, I share what I build and where I wander.</p>
+                <a href="#content"> <button id="explore-btn">Explore</button></a>
+            </div>
+
+            <div class="content " id="content">
+                <!-- <div class="sorter">
+                    <label for="sortBy">Sort By:</label>
+
+                    <select id="sortBy" name="sortBy">
+                        <option value="latest">Latest First</option>
+                        <option value="oldest">Oldest First</option>
+                    </select>
+                </div> -->
+                <div class="trek-details">
+                    <h2>Nuss Gali</h2>
+                    <p>
+                        <span class="date">10 May 2026</span> <br>
+                       We drove for ~140 km to Mahu Village on the Khari side of Banihal. We reached there at around 9 am after a 3.5 hour drive. We started our trek at 9:30 am after our local guide talked to security forces about permits and formalities. We crossed the first bridge and started walking through local houses and shops for about 25 minutes. Then we merged onto the trail and, after 1.5 km of gentle ascent through patches of ploughed agricultural fields, we reached Nunkoth, where a few dhoks are located beside a stream. We continued along the stream for another 1.5 km, gradually ascending, until we crossed it and reached the army camp at Mori at 10:45 a.m, where our identities were verified. On our left was snow capped Achhan Mal, one of the prominent peaks of the valley with an elevation of ~4190m asl. After a long break, we descended to the left of Mori then ascended back a small ridge and then walked through an open meadowy part until we ascended to a vantage point overlooking Ratan, a lush green valley with multiple dhoks and grazing grounds. Before the road connectivity to Mahu was established, Ratan used to serve as the traditional route for locals traveling across the region. We had our lunch on the way besides a stream just 1km before Nuss Gali. After lunch we gained about 225 metres of elevation and reached Nuss Gali at around 1:45pm. Nuss Gali connects Banihal's Mahu Valley to Kulgam's Gulzarabad. From the top we could clearly see prominent peaks like Huen Heng Peak (~4200m asl) of Kulgam, Didam (~4215m asl), Sunder Top (~3847m asl). On a clear day, you can even see the distant Kishtwar Himalayas, the peaks around Pahalgam, and possibly Harmukh(i'm not sure about it). I got to see many peaks of Kishtwar and Anantnag, one of them I suspect to be of Brahmma 2. After an hour at nuss gali, we started descending back to Mahu village and then left for Srinagar at 6:30 pm.
+
+
+
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b>Easy<br>
+                        <b>Total Distance: </b> 17 kms <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/nuss_gali/mori.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Mori / Achhan</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/dhok.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Dhok after Mori</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/mori2.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Achhan Mal(~4190m ASL) in the background </figcaption>
+                        <br>
+                        <img src="images/nuss_gali/valley5.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Valley</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/nuss_gali1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Just below Nuss Gali</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/nuss_gali/trukan.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Trukan</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/valley1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Valley</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/valley3.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Didam and Huen Heng in the backdrop</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/valley4.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Trail toward Nuss Gali</figcaption>
+                        <br>
+                        <img src="images/nuss_gali/nuss_gali.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Nuss Gali</figcaption>
+
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Choharnag Again</h2>
+                    <p>
+                        <span class="date">19 October 2025</span> <br>
+                        <!-- write details here -->
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b>Easy<br>
+                        <b>Total Distance: </b> 10 kms<br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/choharnag_again/choharnag1.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Choharnag 1</figcaption>
+                        <br>
+                        <img src="images/choharnag_again/choharnag3.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Choharnag 3</figcaption>
+                        <br>
+                        <img src="images/choharnag_again/margan.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Margan Top (approx 3700m ASL)</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/choharnag_again/choharnag2.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Choharnag 2</figcaption>
+                        <br>
+                        <img src="images/choharnag_again/choharnag4.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Choharnag 4</figcaption>
+                        <br>
+                        <img src="images/choharnag_again/valley1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Peaks of Kishtwar viewed from Choharnag 1</figcaption>
+
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Mawarnag</h2>
+                    <p>
+                        <span class="date">14 September 2025</span> <br>
+                        We drove from Srinagar to Ahlan Gadol village and began our trek from there. The trail initially
+                        passed through a mildly dense forest, following prominent water pipelines for a few kilometers.
+                        After covering about 1.6 km, we reached Kassi. Due to recent flash floods, several bridges were
+                        damaged, forcing us to cross a few small water bodies on foot. Continuing for another 2.1 km, we
+                        reached Guddarwuin, a settlement area with a few dhoks used by the Gujjar community. This place
+                        had some well-placed wooden benches, making it a good resting
+                        point. From Guddarwuin, we turned right and ascended a steep section through a lightly forested
+                        mountainside for around 2 km, eventually reaching an open meadow(not that meadowy) known as Ali
+                        Brari. With fewer
+                        trees and over 20 dhoks scattered across the area, it is one of the largest clusters of dhoks
+                        I’ve seen so far. Ali Brari also serves as a good campsite, and we took a short break there.
+
+                        From Ali Brari, we followed a zero gradient trail, followed by a long descent, crossed a water
+                        body,
+                        and then began ascending a mildly steep ridge toward Inderwal. After resting there, we continued
+                        our ascent above the treeline and climbed the final ridge leading to Mawarnag 1, situated at an
+                        elevation of approximately 3790 m ASL. We reached the first lake at 1:00 pm.
+
+                        We then ascended a steep, rocky ridge to Mawarnag 2, reaching the second lake at 1:30 pm,
+                        located at approximately 3855 m ASL. We had lunch there until light rain began. At 2:00 pm, we
+                        started our descent, returning first to Mawarnag 1 and then continuing back towards Ahlan.
+
+                        I and four others were the first to reach the vehicles at around 6:00 pm. However, local
+                        security
+                        forces stopped us for trekking without prior permission. As many of group members were still on
+                        the
+                        trail, three of us went back to bring some of them down safely. By then, it was completely dark.
+                        I left
+                        my backpack in the car, put on my headlamp, and hiked approximately 3 km back from Ahlan to
+                        Guddarwuin through a dense forest in pitch darkness. We eventually met some of the remaining
+                        trekkers
+                        and guided them down.
+
+                        The security forces held us there until the entire group had assembled, after which we were
+                        allowed to depart from Ahlan at around 9:30 p.m.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b>Moderate<br>
+                        <b>Total Distance: </b> 22 kms (ps: 28 for me though) <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/mawarnag/gully.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Dense gully on the way</figcaption>
+                        <br>
+                        <img src="images/mawarnag/towards_guderwuin.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Just Before Guddarwuin</figcaption>
+                        <br>
+                        <img src="images/mawarnag/mawarnag1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Mawarnag 1 (approx 3790m ASL)</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/mawarnag/guderwuin.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Dhok and Benches at Guddarwuin (approx 2800m ASL)</figcaption>
+                        <br>
+                        <img src="images/mawarnag/ayrenbror.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Cluster of Dhoks at "Ali Brari"</figcaption>
+                        <br>
+                        <img src="images/mawarnag/mawarnag2.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Mawarnag 2 (approx 3855m ASL)</figcaption>
+
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Durinar Lakes</h2>
+                    <p>
+                        <span class="date">13 October 2024</span> <br>
+                        <!-- write details here -->
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Moderate-Difficult<br>
+                        <b>Total Distance: </b> 18 kms <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/durinar/durinar1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Durinar 1 (approx 4165m ASL)</figcaption>
+                        <br>
+                        <img src="images/durinar/crazyPeak.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Random Peak in Zanskar Range</figcaption>
+                        <br>
+                        <img src="images/durinar/crossing.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>River crossing in the dark </figcaption>
+                        <br>
+                        <img src="images/durinar/zanskar_ranges.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>View from Durinar </figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/durinar/durinar2.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Durinar 2 (approx 4278m ASL)</figcaption>
+                        <br>
+                        <img src="images/durinar/moon.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Random Peak in Zanskar Range</figcaption>
+                        <br>
+                        <img src="images/durinar/peaks.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Random Peak in Zanskar Range</figcaption>
+                        <br>
+                        <img src="images/durinar/durinar_1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Durinar 1 </figcaption>
+
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Trusar & Magroosar</h2>
+                    <p>
+                        <span class="date">27, 28 July 2024</span> <br>
+
+                        We drove from Srinagar to Doodhpathri and started our trek from the Shaliganga river crossing.
+                        We retraced the trail up to Diskhal, which we had visited during the Ashtaar trek. At Diskhal,
+                        we enjoyed a noon chai break with nomads and then descended to the left. After crossing a rocky
+                        patch and a small ridge, we reached Bod Aangun . We traversed Bod Aangun via smooth trails and
+                        ascended to a ridge that serves as a
+                        vantage point to Naav and leads to the Chaskinar Campsite. We descended the ridge and walked
+                        straight to the campsite, where we pitched our tents and had lunch and rest.
+
+                        Some of us ascended the ridge between Trusar and Chaskinar, reaching the top where we saw the
+                        three lakes of the Trusar cluster and enjoyed the sunset. We descended back to our campsite in
+                        the dark, had dinner(PS: Butane can was not feeling good that night), and witnessed an amazing
+                        galaxy and constellations that night.
+
+                        After a few hours of sleep, we started walking at 5:30 am toward Magroosar Lake. I compared the
+                        actual southern view of Tatakooti Peak with a picture from Dr. Ernest F. Neve's book "Beyond the
+                        Pir
+                        Panjal - 1912" (there wasn't much difference).
+                        After crossing several ridges, we reached Magroosar Lake around 10 am. On our return, we
+                        encountered dense fog and an hour of rainfall. We packed up our campsite and descended back to
+                        Doodhpathri before driving back to Srinagar.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b>Moderate<br>
+                        <b>Total Distance Covered: </b> 51 kms <br>
+                        <b>Total Time: </b> 35h:08m<br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Trusar_magroosar/chaskinar.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>
+                            Chaskinar Campsite</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/valley.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Valley after Chaskinar</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/galaxy.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Galaxy</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/wild_flowers.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Wild Flowers at Magroosar</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Trusar_magroosar/trusar.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Trusar (Cluster of 3 Lakes)</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/night_river_crossing.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>River crossing in the dark</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/bod_aangan.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Bod Aangun <span lang="ks" style="font-family: Noto Nastaliq Urdu;">(بوٚڈ
+                                آنٛگُن)</span>
+                        </figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/magroosar.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Magroosar (approx 4110 m ASL)</figcaption>
+                        <br>
+                        <img src="images/Trusar_magroosar/sunset.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>
+                            Sunset view from Trusar Ridge
+                            facing Doodpathri</figcaption>
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Lidwas after a Year</h2>
+                    <p>
+                        <span class="date">19 July 2024</span> <br>
+                        <!--  write details here-->
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy<br>
+                        <b>Total Distance: </b> 12 kms <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/lidwas2/lidwas.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>
+                            Solar Power Source in Lidwas</figcaption>
+                        <br>
+                        <img src="images/lidwas2/peaks.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Peaks</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/lidwas2/after_lidwas.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Rocky terrain after Lidwas</figcaption>
+                        <br>
+                        <img src="images/lidwas2/lidwas_2024.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Just below Lidwas</figcaption>
+
+                    </div>
+
+                </div>
+                <div class="trek-details">
+                    <h2>Ashtaar Valley</h2>
+                    <p>
+                        <span class="date">02 June 2024</span> <br>
+                        We began our trip with a 55-kilometer drive from Srinagar to Doodpathri, Budgam. The trail
+                        started from the Shaliganga river crossing at Doodpathri, with an initial steep ascent through a
+                        forest ridge leading to Diskhal Meadows. From this point, we caught a glimpse of Tatakooti Peak
+                        and enjoyed a noon chai (made with buffalo milk) break with nomads. After descending into the
+                        meadow to the right of Diskhal, we reached a water stream emerging from the Tatakooti glacier,
+                        which we crossed via a wooden bridge. We then ascended to a meadow and walked straight to
+                        Ashtaar Valley for lunch. On our return, we picked up some rotis and another cup of noon chai
+                        from the same nomads at Diskhal before descending back to Doodpathri and returning to Srinagar.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy-Moderate<br>
+                        <b>Total Distance: </b> 23 kms <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/ashtaar/diskhal.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Kids at Diskhal</figcaption>
+                        <br>
+                        <img src="images/ashtaar/valley.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>View from Diskhal</figcaption>
+                        <br>
+                        <img src="images/ashtaar/ashtaar.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Ashtaar Valley with
+                            Tatakooti Peak in the background</figcaption>
+
+
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/ashtaar/river_crossing.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Taar</figcaption>
+                        <br>
+                        <img src="images/ashtaar/diskhal2.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Nomads of Diskhal Meadows</figcaption>
+                        <br>
+                        <img src="images/ashtaar/nomad.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Noon Chai Break with Nomads </figcaption>
+                    </div>
+
+                </div>
+                <div class="trek-details">
+                    <h2>Panzkoot Waterfall</h2>
+                    <p>
+                        <span class="date">05 May 2024</span> <br>
+
+                        The Panzkoot trek began with a ~70 km drive from Srinagar to Halan village in Manzgam, Kulgam,
+                        with
+                        necessary permits obtained from the Nihama Army Camp. The trail started from Halan with
+                        an
+                        initial steep ascent through a forest ridge, leading to a vantage point over the Upper Chiranbal
+                        Meadows.Some prominant peaks of shopian and kulgam are visible from these meadows, like
+                        Brahmasakli and
+                        more. After descending into the meadow which connected to several other trails such as Hakwas,
+                        Zajmarg, Indersar, Astanmarg, and Chirsar, we passed through a dense forest section to
+                        reach the
+                        Panzkoot Waterfall by 12:30 PM, where we had our lunch. During the return, we had a tea-coffee
+                        mix and
+                        interacted with local foragers collecting Guchi Mushrooms(Morel Mushrooms) . We got to see some
+                        Gucchi
+                        before descending back to Halan and returning to Srinagar.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy<br>
+                        <b>Total Distance: </b> 12 kms <br>
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Panzkoot/panzkoot_waterfall.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Panzkoot Waterfall</figcaption>
+                        <br>
+                        <img src="images/Panzkoot/lower_himalayas.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Lower Himalayas</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Panzkoot/heour_chiranbal.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Heuor Chiranbal</figcaption>
+                        <br>
+                        <img src="images/Panzkoot/IMG_4156(1).gif" alt="" />
+                    </div>
+
+                </div>
+                <div class="trek-details">
+                    <h2>Sheeshnag</h2>
+                    <p>
+                        <span class="date">15 October 2023</span> <br>
+
+                        The Sheeshnag trek began after a 90 km drive from Srinagar to Chandanwari (~2740 m ASL), though
+                        the
+                        journey was delayed due to two flat tyres, resolved with help from a local Tavera driver who
+                        provided a
+                        spare. After tea and pakoras in Pahalgam, we began the trek from Chandanwari. The trail,
+                        fully
+                        concretized by BRO as part of the Amarnath Yatra route, was easy to follow and allowed for a
+                        fast pace.
+                        Two of us quickly ascended to Pissu Top, rejoining another trekking group that started the trek
+                        one and a half hours before us. The trail then passed Zojibal, home to an Army camp and BRO
+                        quarters, where mild
+                        snowfall
+                        began. We reached Sheeshnag Lake (~3600 m ASL) around 12:30 PM after covering 9
+                        km. Snowfall intensified, reducing visibility to 100–200 feet. The rest of the group arrived at
+                        1:40
+                        PM.
+                        After
+                        lunch, the sky cleared, revealing Sheeshnag Lake surrounded by fresh snow-covered peaks. We
+                        began
+                        descending at 3 PM and reached Chandanwari before departing back to Srinagar.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy<br>
+                        <b>Total Distance: </b> 18 kms <br>
+                        <b>Total Time on Trail: </b> 7 hrs
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap"><img src="images/Sheeshnag/pissuTop.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Scenic View from Pissu Top</figcaption>
+                    </div>
+                    <div class="img-cap"><img src="images/Sheeshnag/sheeshnag.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Sheesh Nag</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Sheeshnag/snow_trail.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Fresh Snowfall on the Trail</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Sheeshnag/sheeshnag_peek.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>1st Glimpse of the Lake</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Sheeshnag/stream.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Sheeshnag's Thread<figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Sheeshnag/IMG20231015123251-1(1).jpeg" alt="" />
+                        <figcaption>Me</figcaption>
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Margan Lakes: Choharnag & Khellannag</h2>
+                    <p>
+                        <span class="date">03 September 2023</span> <br>
+
+                        The Choharnag trek began with a 120 km drive from Srinagar to Margan Top, after which the trail
+                        started
+                        towards the left of the pass. A steep ridge was crossed within the first hour, and after
+                        approximately 4
+                        km of trekking, we reached Choharnag 1, part of a cluster of four alpine lakes
+                        collectively named
+                        Choharnag (meaning "four springs"). Known as one of the easiest alpine lake treks in the region,
+                        the
+                        route continued to Choharnag 2, the largest of the four, followed by Choharnag 3, which I
+                        consider the
+                        most
+                        scenic amoung the four. Then, Choharnag 4, was reached before ascending a steep 200-meter ridge
+                        to
+                        Khellan Top
+                        (~4300 m ASL), a vantage point offering expansive views of Khellan Nag Lake, whose deep blue
+                        color was
+                        attributed to mineral content and sunlight angle. From this high point, Shilsar 1 and 2 were
+                        also
+                        visible
+                        through binoculars, previously visited on a trek. Lakes Choharnag 1, 2, and 3 were
+                        clearly
+                        visible from the ridge. After lunch at Khellan Top, we descended back to Margan Top and
+                        concluded
+                        the day with tea at Majid’s dhaba, also visited during the Shilsar trek.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy to Moderate(for Choharnag) & Moderate to Difficult (for Khellannag)
+                        <br>
+                        <b>Total Distance: </b> 18 kms
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap"><img src="images/choharnag/choharnag1.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Choharnag 1</figcaption>
+                    </div>
+                    <div class="img-cap"><img src="images/choharnag/choharnag_2.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Choharnag 2</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/choharnag3.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Choharnag 3</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/choharnag4.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Choharnag 4</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/Khelannag.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Khelan Nag viewed from <b>Khellan Top</b>(approx 4300m ASL)<figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/sheep.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>A day old lamb traversing near Choharnag 4 </b></figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/shilsar.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Shilsar 1 & 2 viewed from Khellan Top </figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/choharnag/IMG20230903135829.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Margan Valley viewed from Khellan Top </figcaption>
+                    </div>
+
+
+                </div>
+                <div class="trek-details">
+                    <h2>The Arshan Valley</h2>
+                    <p>
+                        <span class="date">20 August 2023</span> <br>
+
+                        The trek to Arshan Lake began after a ~110 km drive from Srinagar to Sinthan Top (few kilometers
+                        before Sinthan Top), a
+                        high-altitude pass
+                        in South Kashmir. From there, the trail led into Arshan Valley, and after a few hours of
+                        trekking, we reached Arshan Sar (also known as Drinyan Sar). The route then continued via a
+                        steep,
+                        rocky ascent
+                        to Drinyansar Pass (~4170 m ASL), which offers panoramic views of Zednag, Nehnag, and the Famber
+                        Valley.
+                        A sharp descent from the pass led to Zednag followed by Nehnag, a distinctive kidney-shaped
+                        alpine lake.
+                        I further explored the region by ascending to Hoksar 1 (Abdullah Sar on some maps) before
+                        descending back to Zednag. We then retraced the trail back over Drinyansar Pass, closely
+                        sighting a Himalayan Marmot and reached Sinthan Top by sunset,
+                        completing a
+                        high-altitude circuit through a rugged and scenic section of Sinthan.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Moderate to Difficult <br>
+                        <b>Total Distance: </b> 14 kms
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap"><img src="images/Arshan/Arshan_Lake.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Arshan Sar</figcaption>
+                    </div>
+                    <div class="img-cap"><img src="images/Arshan/zednag.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Zednag</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/nehnag_and_zednag.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Nehnag(Left) & Zednag(Right) </figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/hoksar1.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Hoksar 1 (Abdullah Sar 1 on Maps)</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/yasoob_zednag.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Zednag viewed from <b>Driyansar Pass</b>(approx 4170m ASL)<figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/driyansar_pass.webp" loading="lazy" width="800"
+                            height="533" alt="" />
+                        <figcaption>Steep Trail to <b>Drinyansar Pass</b></figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/valley.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Famber Valley</figcaption>
+                    </div>
+
+                    <div class="img-cap"><img src="images/Arshan/marmot.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Himalayan Marmot spotted in The Arshan Valley</figcaption>
+                    </div>
+
+
+                </div>
+                <div class="trek-details">
+                    <h2>Shilsar, My First Alpine Lake</h2>
+                    <p>
+                        <span class="date">30 July 2023</span> <br>
+                        The Shilsar Lakes trek began from Margan Top (~3700 m ASL), a high-altitude pass connecting
+                        Islamabad
+                        with Kishtwar, after a 120 km drive from Srinagar. The trail starts to the right of the pass
+                        with an initial steep ridge followed by a gradual ascent through alpine terrain. Out of the four
+                        Shilsar
+                        lakes, we visited only two on this route as the remaining are more accessible from a different
+                        approach. We reached Shilsar 1 (~3900 m ASL) at around 12:30 PM with an estimated surface area
+                        of
+                        6310 sq.
+                        meters (season-dependent), followed by Shilsar 2 (~3920 m ASL) after a 20-minute trek where the
+                        we had
+                        lunch during rain and hail. The lakes marked my first alpine lake experience, with
+                        distant
+                        views of Nun and Kun peaks visible from Margan Top. I was the first to descent at around 4:00
+                        PM, and had a cup of tea
+                        at a
+                        local dhaba owned by Majid, and departed from Margan Top at around 5:30 PM.
+                    </p>
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Easy to Moderate <br>
+                        <b>Total Distance: </b> 11 kms
+                    </span>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Shilsar/margran_road.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Margan Road</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Shilsar/margan_valley.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Margan Top viewed from Shilsar Ridge</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Shilsar/shilsar1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Shilsar 1</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Shilsar/shilsar_valley.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Shilsar Valley</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Shilsar/margan_top.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Margan Top</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Shilsar/shilsar2.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Shilsar 2</figcaption>
+                    </div>
+
+
+                </div>
+                <div class="trek-details">
+                    <h2>Mahadev Peak Basecamp: Lidwas</h2>
+                    <span class="date">25 June 2023</span> <br>
+                    <h3>Route Overview</h3>
+                    <p>Originally intended as a one-day summit attempt to Mahadev Peak (3966 m ASL), the plan had to be
+                        modified
+                        due to road closures in Srinagar caused by a cycle race, resulting in a two-hour delay. We
+                        initiated the trek from Scholar’s School, Dhara (2030 m ASL) without any breaks.
+
+                        After the initial stretch, the trail passed Padshah Pal, followed by an approach toward Bobjan,
+                        a
+                        section known for high bear activity and considered one of the more dangerous segments of the
+                        route.
+                        Several members reported past bear encounters here.
+
+                        Following multiple stream crossings, the trail entered Wovur Gul (I'm not sure about the name),
+                        a steep and energy-intensive
+                        climb.
+                        After gaining elevation in Wovur Gul, Lidwas became visible at a distance. It took about an hour
+                        from
+                        this point to reach Lidwas.</p>
+                    <h3>Lidwas & Above</h3>
+                    <p>Lidwas serves as a seasonal settlement for nomadic communities during the six months of summer.
+                        We reached Lidwas around 1:30 PM. Out of 20 members, 5(Faizan, Basit, Aakash, Sharik and
+                        Yasoob(me)) decided to push further above Lidwas for
+                        better
+                        vantage points of Mahadev Peak. We ascended an additional hour, reaching an altitude of
+                        approximately 3520 m ASL, which provided
+                        unobstructed views of Mahadev Peak and surrounding ridgelines. On the descent back to Lidwas, a
+                        wildlife
+                        sighting occurred, an animal with a furry tail was initially suspected to be a fox, but was
+                        later
+                        confirmed via binoculars to be a Himalayan Marmot, a first-time sighting for us.</p>
+                    <h3>Return Journey</h3>
+                    <p>While descending, we retraced the same route. At Bobjan, a group member narrowly avoided
+                        stepping
+                        on a green snake, marking another notable wildlife encounter. After exiting Bobjan, the trail
+                        gradually
+                        eased, allowing us to recover from the more challenging sections.</p>
+
+                    <span style="font-family:'poppins';">
+                        <b>Trek Grade: </b> Moderate to Difficult <br>
+                        <b>Total Distance: </b> 19.6 kms
+                    </span>
+
+                    </p>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Lidwas/1.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Water Stream near Bobjan</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Lidwas/mahadevPeak.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Mahadev Peak</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Lidwas/IMG20230625134648.webp" loading="lazy" width="800" height="533"
+                            alt="" />
+                        <figcaption>Lidwas</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Lidwas/trail.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Rocky Terrain after Lidwas</figcaption>
+                    </div>
+
+
+                </div>
+                <div class="trek-details">
+                    <h2>Rainuer, The Endless Meadow</h2>
+                    <p> 11 June 2023 <br> The trek begins from Hirpora village in Shopian at approx 2385 meters above
+                        sea
+                        level. Trekking in this area
+                        usually requires prior permission due to its proximity to sensitive zones and the Hirpora
+                        Wildlife
+                        Sanctuary.
+
+                        At around 600 meters into the trail, we reached Zrado, followed by a gradual ascent to
+                        Baliwal. The
+                        trail transitions from forested sections of Shahkoot to more open terrain, and at approximately
+                        6.5 km
+                        from the
+                        trailhead,we reached the Tsurgul Pass. This pass offers the view to Badgam's Shein Meuin
+                        Peak and first major alpine vista,
+                        opening up into expansive meadows and panoramic views of the Pir Panjal range, including
+                        prominent peaks
+                        like Brahmasakli(of Kulgam), Dhakyar(of Shopian), Sunder Top (of Banihal) and more.
+
+                        After crossing the pass, a further 3.5 km leads to the final destination, Rainuer Meadows at
+                        around 3185 m ASL.
+                        The meadows are vast, lush, and relatively less explored, believed to be the second-largest
+                        alpine
+                        meadow in Kashmir. The terrain is grassy, interspersed with boulders and occasional seasonal
+                        streams.
+
+                        Although the standard route is a circuit trek (Hirpora → Rainuer → Dubjan
+                        Bridge → Hirpora), we had to return via the same route due to an injury to one member.
+
+                        During the descent, we were warmly hosted by local nomads at a hut near the trail. Around
+                        15 of us were served noon chai, roti, and fresh homemade butter. Despite offering to
+                        pay, the
+                        nomads politely refused any compensation, showcasing typical high-altitude hospitality(PS:
+                        Nomad's of Diskhal are an exception ).
+                        <br>
+
+                        Trek Grade: Easy to Moderate <br> Total Distance: 19 kms
+                    </p>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Rainuer/meadow1.webp" loading="lazy" width="800" height="533"
+                            alt="Trugut pass" />
+                        <figcaption>Extended Meadow as viewed from <br> Tsrugut Pass</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Rainuer/pink_tea.webp" loading="lazy" width="800" height="533" alt="" />
+                        <figcaption>Noon Chai with Bread and fresh Butter <br>offered by Nomads </figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Rainuer/dhoka.webp" loading="lazy" width="800" height="533"
+                            alt="Nomadic kacha House" />
+                        <figcaption>Inside a Nomadic House called "Dhok"</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Rainuer/IMG20230611120223.webp" loading="lazy" width="800" height="533"
+                            alt="Nomadic kacha House" />
+                        <figcaption>Tsurgul Pass</figcaption>
+                    </div>
+                    <div class="img-cap">
+                        <img src="images/Rainuer/Bakarawal_dog.webp" loading="lazy" width="800" height="533"
+                            alt="Marchoi Valley" />
+                        <figcaption>Bakarwaal's Dog </figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Rainuer/meadow2.webp" loading="lazy" width="800" height="533"
+                            alt="Marchoi Valley" />
+                        <figcaption>Infinite Lush Green Alpine Meadow </figcaption>
+                    </div>
+                </div>
+                <div class="trek-details">
+                    <h2>Dumail, Naranaag</h2>
+                    <p> 11 July 2021 <br> The trek begins from Naranag village, situated at around 2277 meters above sea
+                        level.
+                        A
+                        few
+                        hundred meters into the trail, we pass by ancient Hindu temples, offering a quick
+                        historical stop.
+                        After approximately 4 km and 2 hours of trekking, Dumail is reached at ~2400 m ASL. The trail up
+                        to
+                        Dumail
+                        features minimal elevation gain and is rated as easy. The name “Dumail” is derived from “Du”
+                        (two) and
+                        “Mail” (join), marking the confluence of two rivers—Marchoi Nala and another stream originating
+                        from
+                        Gangbal
+                        Lake. These form the Wangath River. A distinctive wooden bridge at Dumail marks the crossing
+                        point to
+                        the
+                        next section of the trail. From Dumail, the trail transitions into a moderate gradient ascent
+                        through
+                        alpine
+                        meadows for the next 5 km. This section involves a steady climb with scenic views of the
+                        surrounding
+                        forested ridgelines and open pastures. After approximately 4 additional hours of trekking, the
+                        Harmukh
+                        peaks
+                        come into view, signaling proximity to Marchoi Valley, which sits at an altitude of about 2850
+                        m. <br>
+
+                        Trek Grade: Easy to Moderate <br> Total Distance: 19 kms</p>
+
+                </div>
+                <div class="trek-images">
+                    <div class="img-cap">
+                        <img src="images/Dumail/dumail1.webp" loading="lazy" width="800" height="533"
+                            alt="Trail through pine forest to Dumail" />
+                        <figcaption>Where two rivers meet - Dumail</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Dumail/dumail_yasoob.webp" loading="lazy" width="800" height="533"
+                            alt="Confluence of rivers at Dumail" />
+                        <figcaption>It's me near a glacier patch.</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Dumail/marchoi_valley.webp" loading="lazy" width="800" height="533"
+                            alt="Marchoi Valley" />
+                        <figcaption>Magical Marchoi Valley</figcaption>
+                    </div>
+
+                    <div class="img-cap">
+                        <img src="images/Dumail/dense_forest.webp" loading="lazy" width="800" height="533"
+                            alt="Marchoi Valley" />
+                        <figcaption>Silent Forest of Marchoi</figcaption>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>Need GPX trail files?</h3>
+                            <div class="contact-info">
+                                <p>Email me at: <a href="mailto:kamiliyasoob@gmail.com">kamiliyasoob@gmail.com</a></p>
+                                <p>I'll send you detailed GPX files for any trail featured on my blog, plus bonus
+                                    waypoints
+                                    and elevation data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        &copy 2025 devhike.
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
